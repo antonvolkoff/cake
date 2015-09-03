@@ -1,14 +1,3 @@
-## Generalized middleware for Go
-
-## Installation
-
-```
-go get -u github.com/choix/cake
-```
-
-## Usage
-
-```go
 package main
 
 import (
@@ -39,13 +28,3 @@ func main() {
 	m.Use(layerB)
 	m.Call(nil)
 }
-```
-
-Output:
-
-```
-+ A
-+ B
-- B
-- A
-```
